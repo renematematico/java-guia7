@@ -10,22 +10,27 @@ package libro;
  * @author crist
  */
 public class Libro {
-    // atributos
+    
+/////////////ATRIBUTOS/////////////
     public int ISBN;
     public String titulo;
     public String autor;
     public int numPag;
 
+    /////////////CONSTRUCTORES/////////////
     
+    //CONSTRUCTOR sin parámetros
     public Libro() {
     }
-
+// CONSTRUCTOR con parámetros.
     public Libro(int ISBN, String titulo, String autor, int numPag) {
         this.ISBN = ISBN;
         this.titulo = titulo;
         this.autor = autor;
         this.numPag = numPag;
     }
-    
+/////////////MÉTODOS FUNCIONALES/////////////    
+
+
     
 }

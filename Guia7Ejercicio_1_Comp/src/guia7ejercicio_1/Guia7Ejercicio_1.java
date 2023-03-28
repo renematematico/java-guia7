@@ -24,8 +24,7 @@ public class Guia7Ejercicio_1 {
         
         cargarLibro(libro1, libro1.ISBN,libro1.titulo,libro1.autor, libro1.numPag);
         
-        
-        
+              
       
         mostrarLibro(libro1.ISBN,libro1.titulo,libro1.autor,libro1.numPag);
     }
