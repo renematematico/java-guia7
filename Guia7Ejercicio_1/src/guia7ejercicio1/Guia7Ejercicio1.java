@@ -3,16 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package guia7ejercicio1_b;
+package guia7ejercicio1;
 
-import guia7ejercicio1_b.elementos.Libro;
-import java.util.Scanner;
+import guia7ejercicio1.elementos.Libro;
 
 /**
  *
  * @author crist
  */
-public class Guia7Ejercicio1_B {
+public class Guia7Ejercicio1 {
 
     /**
      * @param args the command line arguments

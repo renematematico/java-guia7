@@ -5,6 +5,8 @@
  */
 package Clase;
 
+import java.util.Scanner;
+
 /**
  *
  * @author crist
@@ -14,6 +16,11 @@ public class Circunferencia {
     private double radio;
 
     //////////////// CONSTRUCTOR //////////////
+//CONSTRUCTOR sin parámetros
+    public Circunferencia() {
+    }
+        
+//CONSTRUCTOR con parámetros
     public Circunferencia(double radio) {
         this.radio = radio;
     }
@@ -27,4 +34,33 @@ public class Circunferencia {
         this.radio = radio;
     }
     
+    
+/////////////MÉTODOS FUNCIONALES/////////////
+    public void crearCircunferencia(){
+        Scanner leer=new Scanner(System.in);
+    this.radio=leer.nextDouble();
+    }
+    
+    public double areaCirc(){
+    double area=(double)(Math.PI)*(double)(Math.pow(radio,2));        
+        return area;
+    }
+    
+    public double perimCirc(){
+    double perim=(double)(Math.PI)*radio*2;        
+        return perim;    
+    }
+    
+    //////////////////// TO STRING ///////////////////
+
+    @Override
+    public String toString() {
+        return "Circunferencia{" + "radio=" + radio + '}';
+    }
+    
+    
+    
 }
+
+
+

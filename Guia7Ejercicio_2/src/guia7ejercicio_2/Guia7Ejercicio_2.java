@@ -29,19 +29,33 @@ public class Guia7Ejercicio_2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        double radio = crearCircunferencia();
-        Circunferencia c1 = new Circunferencia(radio);
         
-        System.out.println(c1.getRadio());
+        Circunferencia c1=new Circunferencia();
+        Circunferencia c2=new Circunferencia();
         
+System.out.println("=====================================");
+        System.out.println("Ingresar el RADIO para la circunferencia");
+        c1.crearCircunferencia();
+System.out.println("........................................");        
+        System.out.println("El perímetro de la circunferencia es:");
+        System.out.println(c1.perimCirc()+" centímetros");
+System.out.println("........................................");                
+        System.out.println("El área de la circunferencia es:");
+        System.out.println(c1.areaCirc()+" centímetros cuadrados");
+System.out.println("=====================================");        
+        System.out.println("=====================================");
+        System.out.println("Ingresar el RADIO para la circunferencia");
+        c2.crearCircunferencia();
+System.out.println("........................................");        
+        System.out.println("El perímetro de la circunferencia es:");
+        System.out.println(c2.perimCirc()+" centímetros");
+System.out.println("........................................");                
+        System.out.println("El área de la circunferencia es:");
+        System.out.println(c2.areaCirc()+" centímetros cuadrados");
+System.out.println("=====================================");        
+
     }
     
-    public static double crearCircunferencia(){
-    double radio;
-    Scanner leer=new Scanner(System.in);
-        System.out.println("Ingrese el radio");
-        radio=leer.nextDouble();
-        return radio;
-    }
+    
     
 }
