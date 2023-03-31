@@ -41,7 +41,8 @@ public class Juego {
       for (int i = 0; i < intentos; i++) {
           num = leer.nextInt();
           if (num1 == num) {
-              System.out.println("CORRECTO");
+              System.out.println("¡¡¡CORRECTO!!!");
+              System.out.println("¡¡¡HAS GANADO!!!");
               intentos2 += 1;
               break;
           }
@@ -58,9 +59,45 @@ public class Juego {
       if(num1!=num && intentos==intentos2){
           System.out.println("Se terminaron los intentos. PERDISTE");
       }
+System.out.println("==========================================");
+  System.out.println("JUGADOR 2 - Ingrese su número a adivinar");
+      num2 = leer.nextInt();
 
+      System.out.println("JUGADOR 1 - Intente adivinar el número del JUGADOR 2");
+      for (int i = 0; i < intentos; i++) {
+          num = leer.nextInt();
+          if (num2 == num) {
+              System.out.println("¡¡¡CORRECTO!!!");
+              System.out.println("¡¡¡HAS GANADO!!!");
+              intentos1 += 1;
+              break;
+          }
+          if (num < num2) {
+              System.out.println("El número secreto es MAYOR");
+              System.out.println("Ingresá un nuevo número");
+          }
+          if (num > num2) {
+              System.out.println("El número secreto es MENOR");
+              System.out.println("Ingresá un nuevo número");
+          }
+          intentos1 += 1;
+      }
+      if(num2!=num && intentos==intentos1){
+          System.out.println("Se terminaron los intentos. PERDISTE");
+      }
   
-  
+      System.out.println("Los INTENTOS JUGADOR 1 ="+intentos1);
+      System.out.println("Los INTENTOS JUGADOR 2 ="+intentos2);
+      
+      if(intentos1>intentos2){
+          System.out.println("El ganador de esta vuelta es el JUGADOR 2");
+      }
+      if(intentos1<intentos2){
+          System.out.println("El ganador de esta vuelta es el JUGADOR 1");
+      }
+      if(intentos1==intentos2){
+          System.out.println("En esta vuelta tuvimos un EMPATE.");
+      }
   
   }
     
