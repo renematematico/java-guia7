@@ -20,6 +20,11 @@ public class Guia7_ExtrasEjercicio6 {
         // TODO code application logic here
         
         Empleado e001=new Empleado();
+        
+        e001.cargarEmpleado();
+        
+        System.out.println(e001.toString());
+        e001.calcularAumento();
     }
     
 }

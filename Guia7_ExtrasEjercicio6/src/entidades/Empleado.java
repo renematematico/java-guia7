@@ -5,6 +5,8 @@
  */
 package entidades;
 
+import java.util.Scanner;
+
 /**
  *
  * @author crist
@@ -28,8 +30,34 @@ public class Empleado {
 
 ///////////SETTERS///////////
 ///////////METODOS FUNCIONALES///////////
-    
+    public void cargarEmpleado(){
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Ingresar nombre de empleado.");
+        nombre=leer.nextLine();
+        System.out.println("Ingresar edad.");
+        edad=leer.nextInt();
+        System.out.println("Ingresar salario nominal.");
+        salario=leer.nextDouble();
+    }
+    public void calcularAumento(){
+        if(edad<30){
+        //System.out.println("El empleado "+nombre+" tiene "+edad+" años.");
+        System.out.println("Le corresponde un aumento del 5%");
+        System.out.println("El monto a cobrar = $"+(double)Math.round(salario*1.05));        
+        }
+        if(edad>=30){
+        //System.out.println("El empleado "+nombre+" tiene "+edad+" años.");
+        System.out.println("Le corresponde un aumento del 10%");
+        System.out.println("El monto a cobrar = $"+(double)Math.round(salario*1.1));        
+        }
+    }
 ///////////TO STRING///////////
+
+    @Override
+    public String toString() {
+        return "Empleado{" + "nombre= " + nombre + ", edad= " + edad + "años, salario= $" + salario + '}';
+    }
+    
 
    
     
